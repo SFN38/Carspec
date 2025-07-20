@@ -22,3 +22,41 @@ html, body{
 .bg-body-tertiary {
     background-color: #c8c8c8ff !important;
 }
+
+#overlap {
+    position: absolute;
+    top: 50%; /* Adjust vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect center */
+    width: 50%; /* Adjust width as needed */
+    z-index: 10; /* Ensure it appears above the image */
+}
+
+#overlap input.form-control:hover {
+  background-color: #c8c8c8ff;
+}
+
+#overlap input.form-control {
+  background-color: white; /* white background */
+  color: #333333;            /* text color */
+}
+
+#overlap input.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #cccccc; /* Optional: keep border a neutral color */
+}
+
+#overlaptext{
+     position: absolute;
+    top: 25%; /* Adjust vertically */
+    left: 21%;
+    z-index: 10; /* Ensure it appears above the image */
+    font-size: 45px; color: black
+}
+
+#semi-transparent-box {
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  padding: 20px;
+  color: white;
+}
